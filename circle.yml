@@ -9,4 +9,4 @@ deployment:
     branch: master
     commands:
       - docker login -e ${TUTUM_EMAIL} -u ${TUTUM_USERNAME} -p ${TUTUM_PASSWORD} ${TUTUM_URL}
-      - ./gradlew build buildDocker
+      - ./gradlew buildDocker -x test
